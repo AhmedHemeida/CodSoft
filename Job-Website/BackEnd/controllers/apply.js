@@ -45,11 +45,9 @@ module.exports = async (req,res)=>{
         }
 
 
-        const path = req.file ? req.file.path :'/tmp/b8ff04e3a5ca101afd76378c7ffad65e'
         
 
-         const result = await cloudinary.uploader.upload(path, { folder: 'providerimg' }) ;
-        const  Resume= result.secure_url || "null" ;
+        
       
         const form =  new Apply(
 
@@ -57,7 +55,7 @@ module.exports = async (req,res)=>{
                 name              : name ,
                 phone             : phone ,
                 email             : email ,
-                Resume            : Resume,
+                Resume            : 'www',  
                 applicantId       : data.id ,
                 applicantPhoto    : data.photo ,
                 applicantJobTitle : data.JobTitle ,
@@ -92,7 +90,7 @@ module.exports = async (req,res)=>{
                   <p>Here's some additional information:</p>
                   <ul>
                     <li>Application ID: 12345</li>
-                    <li>Submission Date: September 13, 2023</li>
+                    <li>Submission Date: October 8 , 2023</li>
                   </ul>
                   <p>Thank you for using our service.</p>
                 </body>

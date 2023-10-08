@@ -1,7 +1,7 @@
 import React from 'react'; // Make sure to import React
 import { useNavigate } from 'react-router-dom';
 
-export function JobCards(jobArray, activeIndex, toggleAccordion, logo) {
+export function JobCards(jobArray, activeIndex, toggleAccordion) {
   const navigate = useNavigate();
 
   const goApply = (id) => {
@@ -11,7 +11,7 @@ export function JobCards(jobArray, activeIndex, toggleAccordion, logo) {
   return jobArray.map((job, index) => (
     <div className="job-card" key={index}>
       <div className="job-header">
-        <img src={logo} className="company-logo" alt={`Logo for ${job.companyName}`} />
+        <img src={job.CompanyPhoto} className="company-logo" alt={`Logo for ${job.nameOfCompany}`} />
         <div className="company-details">
           <h3>{job.nameOfCompany}</h3>
           <h1>{job.nameOfJob}</h1>

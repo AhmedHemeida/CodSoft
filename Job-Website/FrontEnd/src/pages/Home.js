@@ -15,7 +15,7 @@
           <div className={styles.textContainer}>
 
             <h2 className={styles.H2}> Find Your Dream Job :)</h2>
-            <p className={styles.P} > helle every one , you can search for a job or post job from our website.. </p>
+            <p className={styles.P} > hello every one , you can search for a job or post job from our website.. </p>
           </div>
           <div className={styles.photo}>
             <img className={styles.jobimg} src={img} alt="Your Photo" />

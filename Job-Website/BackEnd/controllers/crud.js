@@ -17,7 +17,7 @@ const GetMyPostedJobs = async (req,res)=>{
 
         if(data) {
 
-        const jobs = await Job.find({IdOfCompany:data.id}, {nameOfJob:1 ,Disc :1 ,Location:1}) ;
+        const jobs = await Job.find({IdOfCompany:data.id}, { CompanyPhoto:1 ,nameOfJob:1 ,Disc :1 ,Location:1}) ;
         res.status(200).json(jobs) ;  }
     }
     catch(error){

@@ -32,6 +32,7 @@ const Applications = () => {
       .then((response) => {
         const jobss = response.data;
         setJob(jobss);
+        console.log(jobss);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -39,7 +40,7 @@ const Applications = () => {
   }, []); 
   
 
-  const goApplicants = (id) => {
+  const goApplicants = (id,job) => {
     navigate(`/applicants?id=${id}`);
   };
 
@@ -67,7 +68,7 @@ const Applications = () => {
         {Job.slice().reverse().map((job, index) => (
           <div className="job-card" key={index}>
             <div className="job-header">
-              <img src={logo} className="company-logo" alt={`Logo for ${job.nameOfCompany}`} />
+            <img src={`${job.CompanyPhoto}`} className="company-logo" alt={`Logo for ${job.nameOfCompany}`} />
               <div className="company-details">
               <h2>{job.nameOfCompany}</h2>
                 <h3>{job.nameOfJob}</h3>
@@ -82,7 +83,7 @@ const Applications = () => {
             
               
                 <p className='jobdes'>{job.Disc}</p>
-                <button className='applybutton' onClick={() => goApplicants(job._id)}> Applicants</button>
+                <button className='applybutton' onClick={() => goApplicants(job._id,job.CompanyPhoto)}> Applicants</button>
               
               
                

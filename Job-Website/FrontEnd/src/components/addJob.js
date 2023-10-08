@@ -57,7 +57,7 @@ function Addjob() {
   const handleSubmit = (e) => {
     e.preventDefault();
  
-
+    console.log(localStorage.getItem('token'))
     AddJob(formData) ;
     
   };
@@ -96,7 +96,7 @@ function Addjob() {
               />
             </div>
             <div className="form-group3">
-              <label htmlFor="job3" className="labe3">Discription</label>
+              <label htmlFor="job3" className="labe3">Description</label>
               <input
                 type="text"
                 name="Disc"

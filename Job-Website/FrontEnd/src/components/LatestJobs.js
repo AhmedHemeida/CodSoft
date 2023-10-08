@@ -1,7 +1,7 @@
 // src/components/JobList.js
 
 import './JobList.css'; // Import the CSS file for job list styles
-import logo from '../photos/logoo.jpg';
+import logo from '../photos/orange.jpg';
 import CanNav from '../components/CanNav' ;
 import React, { useState ,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -24,7 +24,6 @@ const LatestJobs = () => {
   const token = localStorage.getItem('token');
 
     const navigate = useNavigate(); 
-
 
 
   const [Job, setJob] = useState([]); 
@@ -108,9 +107,9 @@ const LatestJobs = () => {
      
 
       {searchTerm ? (
-        JobCards(searchResults, activeIndex, toggleAccordion, logo)
+        JobCards(searchResults, activeIndex, toggleAccordion)
           ) : (
-            JobCards(Job.slice().reverse(), activeIndex, toggleAccordion, logo)
+            JobCards(Job.slice().reverse(), activeIndex, toggleAccordion)
           )}
       </div>
     </div>

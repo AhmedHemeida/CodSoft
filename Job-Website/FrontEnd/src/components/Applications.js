@@ -69,7 +69,7 @@ const token = localStorage.getItem('token');
 
           <div className="job-card" key={index}>
             <div className="job-header">
-              <img src={logo} className="company-logo" alt={`Logo for ${job.jobId.nameOfCompany}`} />
+              <img src={job.jobId.CompanyPhoto} className="company-logo" alt={`Logo for ${job.jobId.nameOfCompany}`} />
               <div className="company-details">
                 <h3>{job.jobId.nameOfCompany}</h3>
                 <h1>{job.jobId.nameOfJob}</h1>

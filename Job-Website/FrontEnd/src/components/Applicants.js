@@ -1,6 +1,6 @@
 
 import './JobList.css'
-import logo from '../photos/logoo.jpg';
+import logo from '../photos/ahmed.jpg';
 import React, { useState ,useEffect} from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -73,7 +73,7 @@ const Applicants = () => {
          <h1 className='NoAppl'>No applicants for this job :(</h1> ) :Applicants.slice().reverse().map((usr, index) => (
           <div className="job-card" key={index}>
             <div className="job-header">
-              <img src={logo} className="company-logo" alt={`Logo for ${usr.name}`} />
+              <img src={`${usr.applicantPhoto}`} className="company-logo" alt={`Logo for ${usr.name}`} />
               <div className="company-details">
               <h2>{usr.name}</h2>
                 <h3>{usr.applicantJobTitle}</h3>
