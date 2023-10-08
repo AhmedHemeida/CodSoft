@@ -15,7 +15,8 @@ During this internship, I chose Level 2, which included two tasks:
 
 ### Job Board Website
 
-For the job board website, I used React.js, Node.js, and MongoDB to create a dynamic and interactive platform for job seekers and employers. This project allowed me to gain valuable experience in modern web development technologies.
+For this project , I used React.js, Node.js, and MongoDB to create a dynamic and interactive platform for job seekers and employers ,
+This project allowed me to gain valuable experience in modern web development technologies.
 
 ### Tribute Page
 
