@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-let base="http://localhost:8000/api";
+let base="https://job-9swc.onrender.com/api";
 
 
 const token = localStorage.getItem('token');

@@ -42,7 +42,7 @@ const LatestJobs = () => {
     };
 
     axios
-      .get("http://localhost:8000/api/get-alljobs", {
+      .get("https://job-9swc.onrender.com/api/get-alljobs", {
         headers: headers,
       })
       .then((response) => {

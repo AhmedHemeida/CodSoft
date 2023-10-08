@@ -32,7 +32,7 @@ const Applicants = () => {
     };
 
     axios
-      .get(`http://localhost:8000/api/get-applicants/${JobId}`, {
+      .get(`https://job-9swc.onrender.com/api/get-applicants/${JobId}`, {
         headers: headers,
       })
       .then((response) => {

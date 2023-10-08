@@ -27,7 +27,7 @@ const token = localStorage.getItem('token');
     };
 
     axios
-      .get("http://localhost:8000/api/get-applications", {
+      .get("https://job-9swc.onrender.com/api/get-applications", {
         headers: headers,
       })
       .then((response) => {

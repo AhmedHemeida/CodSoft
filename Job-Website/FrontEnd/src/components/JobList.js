@@ -26,7 +26,7 @@ const Applications = () => {
     };
 
     axios
-      .get("http://localhost:8000/api/get-postedjobs", {
+      .get("https://job-9swc.onrender.com/api/get-postedjobs", {
         headers: headers,
       })
       .then((response) => {
